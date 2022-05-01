@@ -6,11 +6,14 @@ def pytest_addoption(parser):
     parser.addoption(
         "--skip-slow", action="store_true", default=False, help="skip slow tests"
     )
+    parser.addoption(
+        "--skip-integration", action="store_true", default=False, help="skip integration tests"
+    )
 
 
 def pytest_configure(config):
     config.addinivalue_line("markers", "slow: mark test as slow to run")
-
+    config.addinivalue_line("markers", "integration: mark test as integration to run")
 
 def pytest_collection_modifyitems(config, items):
     if config.getoption("--skip-slow"):
@@ -18,3 +21,8 @@ def pytest_collection_modifyitems(config, items):
         for item in items:
             if "slow" in item.keywords:
                 item.add_marker(skip_slow)
+    if config.getoption("--skip-integration"):
+        skip_integration = pytest.mark.skip(reason="you need to remove --skip-integration option to run")
+        for item in items:
+            if "integration" in item.keywords:
+                item.add_marker(skip_integration)

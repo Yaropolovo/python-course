@@ -1,0 +1,9 @@
+2021-09-15 10:53:22 asset INFO reading asset file...
+2021-09-15 10:53:22 asset DEBUG building asset object...
+2021-09-15 10:53:22 asset WARNING too many periods were provided: 6
+2021-09-15 10:53:22 asset DEBUG asset Asset(property, 1000.0, 0.1) for period 1 gives 100.00000000000009
+2021-09-15 10:53:22 asset DEBUG asset Asset(property, 1000.0, 0.1) for period 2 gives 210.0000000000002
+2021-09-15 10:53:22 asset DEBUG asset Asset(property, 1000.0, 0.1) for period 3 gives 331.0000000000004
+2021-09-15 10:53:22 asset DEBUG asset Asset(property, 1000.0, 0.1) for period 4 gives 464.1000000000004
+2021-09-15 10:53:22 asset DEBUG asset Asset(property, 1000.0, 0.1) for period 5 gives 610.5100000000006
+2021-09-15 10:53:22 asset DEBUG asset Asset(property, 1000.0, 0.1) for period 6 gives 771.5610000000008

@@ -1,0 +1,12 @@
+20211015_204624.199 task_Yaropolov_Oleg_web_service_log DEBUG start processing query: python redlockfifo test
+20211015_204550.254 task_Yaropolov_Oleg_web_service_log DEBUG start processing query: python yu
+20211015_204624.853 task_Yaropolov_Oleg_web_service_log INFO found 0 articles for query: python redlockfifo test
+20211015_204552.653 task_Yaropolov_Oleg_web_service_log INFO found 303 articles for query: python yu
+20211015_204552.654 task_Yaropolov_Oleg_web_service_log DEBUG finish processing query: python yu
+20211015_204552.657 task_Yaropolov_Oleg_web_service_log DEBUG start processing query: python test
+20211015_204553.581 task_Yaropolov_Oleg_web_service_log INFO found 2456 articles for query: python test
+20211016_204624.854 task_Yaropolov_Oleg_web_service_log DEBUG finish processing query: python redlockfifo test
+20211015_204553.582 task_Yaropolov_Oleg_web_service_log DEBUG finish processing query: python test
+20211015_204624.199 task_Yaropolov_Oleg_web_service_log DEBUG start processing query: python redlockfifo test
+20211015_204624.853 task_Yaropolov_Oleg_web_service_log INFO found 0 articles for query: python redlockfifo test
+20211015_204624.854 task_Yaropolov_Oleg_web_service_log DEBUG finish processing query: python redlockfifo test

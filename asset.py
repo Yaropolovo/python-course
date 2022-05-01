@@ -6,6 +6,8 @@ import logging.config
 
 import yaml
 
+import cbr
+
 WARN_PERIOD_THRESHOLD = 5
 logger = logging.getLogger("asset")
 
@@ -18,6 +20,12 @@ class Asset:
 
     def calculate_revenue(self, years: int) -> float:
         revenue = self.capital * ((1.0 + self.interest) ** years - 1.0)
+        return revenue
+
+    def calculate_revenue_from_usd(self, years: int) -> float:
+        usd_course = cbr.get_usd_course()
+        usd_revenue = self.calculate_revenue(years=years)
+        revenue = usd_revenue * usd_course
         return revenue
 
     @classmethod
